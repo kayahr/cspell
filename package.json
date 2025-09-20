@@ -20,7 +20,10 @@
         "name": "Klaus Reimer",
         "email": "k@ailis.de"
     },
-    "repository": "github:kayahr/cspell",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kayahr/cspell.git"
+    },
     "homepage": "https://github.com/kayahr/cspell",
     "bugs": "https://github.com/kayahr/cspell/issues",
     "funding": "https://github.com/kayahr/cspell?sponsor=1",
@@ -31,7 +34,7 @@
         "lib"
     ],
     "bin": {
-        "cspell": "./lib/cspell.js"
+        "cspell": "lib/cspell.js"
     },
     "scripts": {
         "build": "node build.js",
