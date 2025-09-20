@@ -37,7 +37,7 @@
         "build": "node build.js",
         "test": "node --run test:unit && node --run test:cspell",
         "test:unit": "node --test",
-        "test:cspell":" node lib/cspell.js",
+        "test:cspell": " node lib/cspell.js",
         "prepare": "node --run build",
         "start": "node lib/cspell.js"
     },
