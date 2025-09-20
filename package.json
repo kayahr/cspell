@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json.schemastore.org/package",
+    "name": "@kayahr/cspell",
+    "version": "9.2.1-bundle.1",
+    "type": "module",
+    "description": "A drop-in replacement for cspell, bundling cspell and its many dependencies into a single module",
+    "keywords": [
+        "cspell",
+        "no dependencies",
+        "bundle",
+        "spell",
+        "checker",
+        "code",
+        "spelling",
+        "spell checker",
+        "spelling checker"
+    ],
+    "license": "MIT",
+    "author": {
+        "name": "Klaus Reimer",
+        "email": "k@ailis.de"
+    },
+    "repository": "github:kayahr/cspell",
+    "homepage": "https://github.com/kayahr/cspell",
+    "bugs": "https://github.com/kayahr/cspell/issues",
+    "funding": "https://github.com/kayahr/cspell?sponsor=1",
+    "publishConfig": {
+        "access": "public"
+    },
+    "files": [
+        "lib"
+    ],
+    "bin": {
+        "cspell": "./lib/cspell.js"
+    },
+    "scripts": {
+        "build": "node build.js",
+        "test": "node --run test:unit && node --run test:cspell",
+        "test:unit": "node --test",
+        "test:cspell":" node lib/cspell.js",
+        "prepare": "node --run build",
+        "start": "node lib/cspell.js"
+    },
+    "devDependencies": {
+        "cspell": "9.2.1",
+        "esbuild": "0.25.10",
+        "esbuild-plugin-license": "1.2.3"
+    }
+}
