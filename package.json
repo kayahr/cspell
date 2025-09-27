@@ -37,14 +37,17 @@
         "cspell": "lib/cspell.js"
     },
     "scripts": {
+        "clean": "rm -rf lib",
         "build": "node build.js",
-        "test": "node --run test:unit && node --run test:cspell",
-        "test:unit": "node --test",
-        "test:cspell": " node lib/cspell.js",
-        "prepare": "node --run build",
+        "test": "run test:*",
+        "test:unit": "ntest",
+        "test:cspell": "node lib/cspell.js",
+        "prepare": "run clean build",
         "start": "node lib/cspell.js"
     },
     "devDependencies": {
+        "@kayahr/npm-utils": "0.0.2",
+        "@kayahr/ntest": "1.0.0",
         "cspell": "9.2.1",
         "esbuild": "0.25.10",
         "esbuild-plugin-license": "1.2.3"
