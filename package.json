@@ -46,7 +46,7 @@
         "start": "node lib/cspell.js"
     },
     "devDependencies": {
-        "@kayahr/npm-utils": "0.0.2",
+        "@kayahr/npm-utils": "0.0.6",
         "@kayahr/ntest": "1.0.0",
         "cspell": "9.2.1",
         "esbuild": "0.25.10",
