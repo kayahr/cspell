@@ -49,7 +49,7 @@
         "@kayahr/npm-utils": "1.0.0",
         "@kayahr/ntest": "1.0.0",
         "cspell": "9.2.1",
-        "esbuild": "0.25.10",
+        "esbuild": "0.25.11",
         "esbuild-plugin-license": "1.2.3"
     }
 }
