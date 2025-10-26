@@ -1,7 +1,7 @@
 {
     "$schema": "http://json.schemastore.org/package",
     "name": "@kayahr/cspell",
-    "version": "9.2.1-bundle.2",
+    "version": "9.2.2-bundle.1",
     "type": "module",
     "description": "A drop-in replacement for cspell, bundling cspell and its many dependencies into a single module",
     "keywords": [
@@ -46,10 +46,10 @@
         "start": "node lib/cspell.js"
     },
     "devDependencies": {
-        "@kayahr/npm-utils": "1.0.0",
-        "@kayahr/ntest": "1.0.0",
-        "cspell": "9.2.1",
-        "esbuild": "0.25.10",
+        "@kayahr/npm-utils": "1.1.0",
+        "@kayahr/ntest": "1.1.0",
+        "cspell": "9.2.2",
+        "esbuild": "0.25.11",
         "esbuild-plugin-license": "1.2.3"
     }
 }
